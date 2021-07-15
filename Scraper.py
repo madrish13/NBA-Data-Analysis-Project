@@ -10,7 +10,7 @@ column_titles = [table_headers.getText() for table_headers in soup.findAll('tr',
 
 #construct a data frame
 df = pd.DataFrame()
-for yr in range(2000, 2020): #scraping data from individual drafts
+for yr in range(2000, 2021): #scraping data from individual drafts
     url_current = f"https://www.basketball-reference.com/draft/NBA_{yr}.html"
     
     website = urlopen(url_current)
